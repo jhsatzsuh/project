@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title>Shoppe-A-Lightstick | A-C </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="item.js"></script>
+    </head>
+        <body onload="updateCheckout()">
+         
+            <!--navbar-->
+
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow fixed-top">
+                    <a id="cart-link" class="navbar-brand" href="cart.html">Checkout (0)
+                        <img id="logo" src="images/logo1.jpeg">
+                    </a>
+                    <!--toggle/collapsie Button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span> 
+                    </button>
+
+                    <!--links-->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">A-C<span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#ACE">A.C.E</a></li>
+                            <li><a href="#ASTRO">ASTRO</a></li>
+                            <li><a href="#ATZ">ATEEZ</a></li>
+                            <li><a href="#BP">Blackpink</a></li>
+                            <li><a href="#BTS">BTS</a></li>
+                            <li><a href="#CIX">CIX</a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link" href="ac.html">A-C</a>
+                                 </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" href="dg.html">D-G</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="hk.html">H-K</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="lp.html">L-P</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="qt.html">Q-T</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="uz.html">U-Z</a>
+                                 </li>  
+                            </ul>
+                    </div>
+            </nav>
+
+            <div class="jumbotron text-center banner">
+                <h1>Shoppe-A-Lightstick</h1>
+                <p>We got what you're looking for!</p>
+            </div>
+
+            <!--slideshow-->
+            <div id="demo" class="carousel slide justify-content-center" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/stock4.jpeg" alt="A-C">
+                    <div class="carousel-caption">
+                        
+                  </div>
+                </div>
+                  
+              
+            </div>
+            
+                <!--Body of Document-->
+
+                <div class="container text-center">
+                    <section id="ACE">
+                    <h1>A.C.E</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img1.jpg" class="rounded shadow">
+                            <h4>A.C.E Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(0)">
+                        </div>
+                         <div class="col">
+                            <img src="images/img5.jpg" class="rounded shadow">
+                            <h4>A.C.E 4th mini album HJZM: The Butterfly Phantasy</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(1)">
+                        </div>
+                    </div>
+                    </section>
+
+                    <section id="ASTRO">
+                        <h1>ASTRO</h1>
+                        <div class="row">
+                        <div class="col">
+                            <img src="images/img7.jpg" class="rounded shadow">
+                            <h4>Astro Official Lightstick Ver 2</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(2)">
+                        </div>
+                          <div class="col">
+                            <img src="images/img11.jpg" class="rounded shadow">
+                            <h4>Astro 7th mini album Gateway [Random Ver] </h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(3)">
+                        </div>
+                    </div>
+                    </section>
+                    
+                    <section id="ATZ">
+                    <h1>ATEEZ</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img12.jpg" class="rounded shadow"> 
+                            <h4>Ateez Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(4)">
+                        </div>
+                     <div class="col">
+                            <img src="images/img19.jpg" class="rounded shadow"> 
+                            <h4>Ateez 5th mini album Zero: Fever Pt. 1 [Random Ver]</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(5)">
+                        </div>
+                    </div>
+                   </section>
+
+                    <section id="BP">
+                    <h1>BLACKPINK</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img20.jpg" class="rounded shadow">
+                            <h4>Blackpink Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(6)">
+                        </div>
+                       <div class="col">
+                            <img src="images/img24.jpg" class="rounded shadow">
+                            <h4>Blackpink 1st Full Album The Album [Random Ver]</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(7)">
+                        </div>
+                    </div>
+                    </section>
+
+                    <section id="BTS">
+                    <h1>BTS</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img26.jpg" class="rounded shadow">
+                            <h4>BTS Official Lightstick Map of the Soul Special Edition</h4>
+                            <p>$39.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(8)">
+                        </div>
+                        <div class="col">
+                        <img src="images/img33.jpg" class="rounded shadow">
+                        <h4>BTS 5th Full Album BE (Deluxe Edition)</h4>
+                        <p>$30.99</p>
+                        <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(9)">
+                    </div>
+                    </div> 
+                </section>
+
+                    <section id="CIX">
+                   <h1>CIX</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img34.jpg" class="rounded shadow">
+                            <h4>CIX Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(10)">
+                        </div>
+                        <div class="col">
+                            <img src="images/img37.jpg" class="rounded shadow">
+                            <h4>CIX 3rd mini album HELLO Chapter 3: Hello, Strange Time [Random Ver]</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(11)">
+                        </div>
+                    </div>
+                </section>
+
+
+                </div>
+
+              </div>
+
+        </body>
+</html>

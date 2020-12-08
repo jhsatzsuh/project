@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title>Shoppe-A-Lightstick | H-K </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="item.js"></script>
+    </head>
+        <body onload="updateCheckout()">
+         
+            <!--navbar-->
+
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow fixed-top">
+                    <a id="cart-link" class="navbar-brand" href="cart.html">Checkout (0)
+                        <img id="logo" src="images/logo1.jpeg">
+                    </a>
+                    <!--toggle/collapsie Button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span> 
+                    </button>
+
+                    <!--links-->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">H-K<span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#IKON">IKON</a></li>
+                            <li><a href="#ITZY">ITZY</a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link" href="ac.html">A-C</a>
+                                 </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" href="dg.html">D-G</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="hk.html">H-K</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="lp.html">L-P</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="qt.html">Q-T</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="uz.html">U-Z</a>
+                                 </li>  
+                            </ul>
+                    </div>
+            </nav>
+
+            <div class="jumbotron text-center banner">
+                <h1>Shoppe-A-Lightstick</h1>
+                <p>We got what you're looking for!</p>
+            </div>
+
+            <!--slideshow-->
+            <div id="demo" class="carousel slide justify-content-center" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/stock6.jpeg" alt="H-K">
+                    <div class="carousel-caption">
+                    
+                  </div>
+                </div>                  
+            </div>
+            
+                <!--Body of Document-->
+
+                <div class="container text-center">
+                    <section id="IKON">
+                    <h1>IKON</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img54.jpg" class="rounded shadow">
+                            <h4>IKON Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(18)">
+                        </div>
+                        <div class="col">
+                            <img src="images/img58.jpg" class="rounded shadow">
+                            <h4>IKON 3rd mini album i DECIDE [Random Ver]</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(19)">
+                        </div>
+                    </div>
+                </section>
+                    
+                    <section id="ITZY">
+                    <h1>ITZY</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img59.jpg" class="rounded shadow">
+                            <h4>ITZY Official Ring Light</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(20)">
+                        </div>
+                        <div class="col">
+                            <img src="images/img62.jpg" class="rounded shadow">
+                            <h4>ITZY 3rd mini album Not Shy [Random Ver]</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(21)">
+                        </div>
+                    </div>
+                </section>
+                </div>
+
+              </div>
+
+        </body>
+</html>

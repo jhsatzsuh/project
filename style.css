@@ -1,0 +1,48 @@
+.banner {
+    background-color: purple;
+    color: white;
+    background-image: url(images/texture1.2.jpg);
+    text-shadow: 2px 2px 4px black;
+    margin-top: 50px;
+}
+
+#demo {
+    text-align: center;
+}
+
+body {
+    background-color: #29B9D6;
+    background-image: url(images/texture2.png);
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 4px black;
+}
+
+.col img:not(index.html) {
+    width: 50px;
+    height: 50px;
+}
+
+.col {
+    margin: 20px;
+}
+
+.btn {
+   background-color:  #AB75FE;
+   border-color: #AB75FE;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 50px;
+    color: aliceblue;
+}
+
+a:visited {
+    color: black;
+}
+a:visited:hover {
+    color: cornflowerblue ;
+}

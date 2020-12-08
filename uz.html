@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+    <head> 
+        <title>Shoppe-A-Lightstick | U-Z </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="item.js"></script>
+    </head>
+        <body onload="updateCheckout()">
+         
+            <!--navbar-->
+
+            <nav class="navbar navbar-dark navbar-expand-lg bg-dark shadow fixed-top">
+                    <a id="cart-link" class="navbar-brand" href="cart.html">Checkout (0)
+                        <img id="logo" src="images/logo1.jpeg">
+                    </a>
+                    <!--toggle/collapsie Button-->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span> 
+                    </button>
+
+                    <!--links-->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">U-Z<span class="caret"></span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#VIC">VICTON</a></li>
+                            <li><a href="#WAYV">WayV</a></li>
+                        </ul>
+                    </div>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                 <li class="nav-item">
+                                     <a class="nav-link" href="ac.html">A-C</a>
+                                 </li>
+                                  <li class="nav-item">
+                                     <a class="nav-link" href="dg.html">D-G</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="hk.html">H-K</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="lp.html">L-P</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="qt.html">Q-T</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" href="uz.html">U-Z</a>
+                                 </li>  
+                            </ul>
+                    </div>
+            </nav>
+
+            <div class="jumbotron text-center banner">
+                <h1>Shoppe-A-Lightstick</h1>
+                <p>We got what you're looking for!</p>
+            </div>
+
+            <!--slideshow-->
+            <div id="demo" class="carousel slide justify-content-center" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/stock9.jpeg" alt="U-Z">
+                    <div class="carousel-caption">
+                      
+                  </div>
+                </div>                  
+            </div>
+            
+                <!--Body of Document-->
+
+                <div class="container text-center">
+
+                    <section id="VIC">
+                    <h1>VICTON</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img110.jpg" class="rounded shadow">
+                            <h4>Victon Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(42)">
+                        </div>
+                        <div class="col">
+                            <img src="images/img113.jpg" class="rounded shadow">
+                            <h4>Victon 2nd Single Album MayDay [Random Ver]</h4>
+                            <p>$22.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(43)">
+                        </div>
+                    </div>
+                </section>
+
+
+                    <section id="WAYV">
+                    <h1>WAYV</h1>
+                    <div class="row">
+                        <div class="col">
+                            <img src="images/img120.jpg" class="rounded shadow">
+                            <h4>WayV Official Lightstick</h4>
+                            <p>$29.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(44)">
+                        </div>
+                        <div class="col">
+                            <img src="images/img122.jpg" class="rounded shadow">
+                            <h4>WayV 2nd mini album Take Over the Moon</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(45)">
+                        </div>
+                        <div class="col">
+                            <img src="images/img123.jpg" class="rounded shadow">
+                            <h4>WayV 1st Full Album Awaken the World [Random Ver]</h4>
+                            <p>$25.99</p>
+                            <input class="btn btn-primary btn-lg" type="button" value="Buy It Now!" onclick="add(46)">
+                        </div>
+                    </div>
+                </section>
+
+
+                </div>
+
+              </div>
+
+        </body>
+</html>
